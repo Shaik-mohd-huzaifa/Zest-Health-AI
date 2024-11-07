@@ -1,0 +1,72 @@
+.doctor-widget-container {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+
+    .doctor-widget-header {
+        font-size: 1.8em;
+        text-align: center;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .doctor-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .doctor-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        width: calc(33.333% - 10px); // Three cards per row
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        .doctor-name {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .doctor-department,
+        .doctor-age,
+        .doctor-availability,
+        .doctor-timings {
+            display: flex;
+            align-items: center;
+            font-size: 1em;
+            margin: 5px 0;
+
+            .label {
+                font-weight: bold;
+                color: #555;
+                margin-right: 5px;
+            }
+        }
+
+        .doctor-details {
+            margin-top: 10px;
+            font-size: 0.9em;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+
+            h4 {
+                font-size: 1.1em;
+                color: #333;
+                margin-bottom: 8px;
+            }
+
+            p {
+                margin: 4px 0;
+                line-height: 1.4;
+            }
+        }
+    }
+}

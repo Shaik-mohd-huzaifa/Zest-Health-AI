@@ -1,0 +1,1 @@
+export const Selector = (state) => state.Appointments.appointments
